@@ -1,0 +1,67 @@
+body {
+	background-image: url("../img/flor.jpg");
+}
+
+.searchbox {
+  display: flex;
+  justify-content: space-around;
+}
+.searchbox .search {
+  display: inline-block;
+  width: 85%;
+}
+.searchbox input#search:focus {
+  box-shadow: 0 1px 0 0 #DDD;
+}
+.searchbox i {
+  line-height: 300%;
+}
+p.qnt {
+  padding-bottom: 10px;
+}
+#pool-categorias {
+  display: flex;
+  justify-content: center;
+  float: none;
+}
+#pool-categorias a, #pool-categorias button {
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.avatar .check {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: none;
+}
+.spanRange {
+  border-radius: 15px
+}
+#add-circle {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+#add-card {
+  border: 1px solid #ddd;
+}
+#add-card .card-action {
+  text-align: right;
+}
+#add-card .card-action a {
+  line-height: 2
+}
+#add-card .collapsible-header {
+  border: none;
+}
+#add-card .collapsible-body {
+  padding: 0;
+  border: none;
+}
+#add-card .collapsible-body > div:first-of-type {
+  padding: 2rem;
+  padding-bottom: 0;
+}
