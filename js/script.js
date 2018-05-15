@@ -2,6 +2,8 @@ $(document).ready(function(){
   $('.chips').chips();
   $('.modal').modal();
   $('.tabs').tabs();
+  $('.collapsible').collapsible();
+  $('select').formSelect();
 
   $('.chips-autocomplete').chips({
     autocompleteOptions: {
@@ -35,5 +37,15 @@ $(document).ready(function(){
     } else if (operacao === "delete") {
       $('#modal1').modal('open');
     }
+  });
+
+  $(".add-button").click(function(){
+    $("#add-card").collapsible("close");
+  });
+  $("#add-ok").click(function(){
+    $("#add-form").submit();
+    /* AJAX script to register it on database
+     *  and show it in the list below
+     */
   })
 });

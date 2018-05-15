@@ -37,3 +37,28 @@ p.qnt {
 .spanRange {
   border-radius: 15px
 }
+#add-circle {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+#add-card {
+  border: 1px solid #ddd;
+}
+#add-card .card-action {
+  text-align: right;
+}
+#add-card .card-action a {
+  line-height: 2
+}
+#add-card .collapsible-header {
+  border: none;
+}
+#add-card .collapsible-body {
+  padding: 0;
+  border: none;
+}
+#add-card .collapsible-body > div:first-of-type {
+  padding: 2rem;
+  padding-bottom: 0;
+}

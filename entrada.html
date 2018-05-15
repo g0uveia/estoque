@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Materialize Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- jQuery v3.3.1 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <nav class="row">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Nova entrada</a>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col s12">
+      <div class="container">
+
+
+        <div class="input-field">
+          <textarea class="materialize-textarea" name="txtDescricao" rows="5"></textarea>
+          <label for="txtDescricao">Descrição</label>
+        </div>
+      </div>
+
+      <ul class="collapsible card col s12" id="add-card">
+        <li>
+          <div class="collapsible-header">
+            <i id="add-circle" class="circle grey lighten-2 grey-text text-darken-1 material-icons">add</i>
+            <h6>Adicionar item</h6>
+          </div>
+          <div class="collapsible-body">
+            <div class="row">
+              <form id="add-form">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input name="txtNome" type="text" />
+                    <label for="txtNome">Nome</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s5 input-field">
+                    <input name="numQuantidade" type="text" pattern="\d*" />
+                    <label for="numQuantidade">Quantidade</label>
+                  </div>
+                  <div class="input-field col s7">
+                    <select multiple>
+                      <option value="" disabled selected>Escolher</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                    <label>Categoria</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="card-action">
+              <a href="#" class="add-button">Cancel</a>
+              <a href="#" class="add-button" id="add-ok">Ok</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="collection z-depth-1">
+        <li class="collection-item avatar">
+          <i class="circle grey"></i>
+          <span class="title">Nome</span>
+          <p class="qnt">Quantidade: x</p>
+          <label class="check">
+            <input type="checkbox" class="filled-in" />
+            <span></span>
+          </label>
+        </p>
+        <p>
+          <span class="chip orange white-text">Categoria 1</span>
+          <span class="chip teal white-text">Categoria 2</span>
+        </p>
+      </li>
+      <li class="collection-item avatar">
+        <i class="circle grey"></i>
+        <span class="title">Nome</span>
+        <p class="qnt">Quantidade: x</p>
+        <label class="check">
+          <input type="checkbox" class="filled-in" />
+          <span></span>
+        </label>
+      </p>
+      <p>
+        <span class="chip orange white-text">Categoria 1</span>
+        <span class="chip teal white-text">Categoria 2</span>
+      </p>
+    </li>
+  </ul>
+
+</div>
+</div>
+</body>
+</html>
